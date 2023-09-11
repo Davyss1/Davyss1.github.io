@@ -41,6 +41,17 @@
             margin-left: 10px;
 
         }
+        .container{
+            text-align: center; 
+            
+        }
+
+        div#img{
+            display: block;
+            margin: 0 auto; 
+
+        }
+
              
     </style>
 </head>
@@ -48,15 +59,16 @@
         
     <div class="painel">
         <h1>vamos sair?</h1>
-       <a href="https://www.youtube.com/watch?v=GrK34MHSVoQ"><button id="sim"> Sim! </button></a>
+        <a href="https://www.youtube.com/watch?v=GrK34MHSVoQ"><button id="sim"> Sim! </button></a>
         <button onmouseover="fuja()"id="nao"> Não! </button>
-        <img src="fodase.jpg" style= "left:  735px; top: 225px; position: absolute" width="160" height="125">
+        <div><img src="fodase.jpg" style= "position: auto" width="160" height="125"></div>
         
 
     </div>
+    
     <script>
          
-         function fuja() {
+        function fuja() {
         let btn = document.getElementById('nao');
         let newX = Math.random() * (window.innerWidth - btn.offsetWidth);
         let newY = Math.random() * (window.innerHeight - btn.offsetHeight);
